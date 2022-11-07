@@ -9,6 +9,6 @@ int print_c(va_list c)
 {
 	char character = (char)va_arg(c, int);
 
-	_write(character);
+	_putchar(character);
 	return (1);
 }
