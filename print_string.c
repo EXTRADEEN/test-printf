@@ -3,7 +3,7 @@
 
 /**
  * print_string - A function that prints a string.
- * @s: string to print.
+ * @args: string to print.
  * Return: Always 1 (Success)
  */
 int print_string(va_list args)
@@ -17,7 +17,7 @@ int print_string(va_list args)
 	while (str[i])
 	{
 		_putchar(str[i]);
-		i++
+		i++;
 	}
 	return (i);
 }
