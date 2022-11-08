@@ -9,20 +9,19 @@
 int (*check_format(const char *format))(va_list)
 {
 	int i = 0;
-	print_t p[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"i", print_i},
-		{"d", print_d},
+	s_format find_f[] = {
+		{"c", print_char},
+		{"s", print_string},
 		{NULL, NULL}
 	};
 
-	for (; p[i].t != NULL; i++)
+	while (find_f[i].sc)
 	{
-		if (*(p[i].t) == *format)
-			break;
+		if (find_f[i].sc[0] == (*format))
+			return (find_f[i].f);
+		i++;
 	}
-	return (p[i].f);
+	return (NULL);
 }
 
 /**
@@ -34,7 +33,7 @@ int _printf(const char *format, ...)
 {
 	va_list ap;
 	int (*f)(va_list);
-	unsigned int i = 0, counter = 0;
+	unsigned int i = 0, count_c = 0;
 
 	if (format == NULL)
 		return (-1);
@@ -45,7 +44,7 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
-			counter++;
+			count_c++;
 			i++;
 			continue;
 		}
@@ -54,7 +53,7 @@ int _printf(const char *format, ...)
 			if (format[i + 1] == '%')
 			{
 				_putchar('%');
-				counter++;
+				count_c++;
 				i += 2;
 				continue;
 			}
@@ -64,12 +63,12 @@ int _printf(const char *format, ...)
 				if (f == NULL)
 					return (-1);
 				i += 2;
-				counter += f(ap);
+				count_c += f(ap);
 				continue;
 			}
 		}
 		i++;
 	}
 	va_end(ap);
-	return (counter);
+	return (count_c);
 }
