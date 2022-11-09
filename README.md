@@ -43,8 +43,8 @@ Create a man page for your function.
 
 Add more specifiers
 
-## MADE BY
+## CODED MADE BY
 
  @**MARC-ANTOINE VANNIER**
- 
+
  @**DINU MIRA**
