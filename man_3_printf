@@ -26,10 +26,10 @@ int
 print_string(va_list args);
 
 int
-print_d(va_list i);
+print_decimal(va_list d);
 
 int
-print_i(va_list i);
+print_int(va_list i);
 
 .SH RETURN VALUE
 
