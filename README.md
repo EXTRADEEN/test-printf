@@ -43,7 +43,7 @@ Create a man page for your function.
 
 Add more specifiers
 
-## CODED MADE BY
+## MADE BY
 
  @**MARC-ANTOINE VANNIER**
 
