@@ -67,6 +67,9 @@ Integer: _prinf("5", '3'); Output: 3
 - All your header files should be include guarded
 - Note that we will not provide the _putchar function for this project
 
+## Flowchart
+
+![Flowchart  drawio (1)](https://user-images.githubusercontent.com/113547513/201141230-e7915e75-6f9a-4082-9426-19dd62674d06.png)
 
 ## MADE BY
 
