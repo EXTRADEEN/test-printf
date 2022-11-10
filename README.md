@@ -56,7 +56,7 @@ String: _printf("%s", 'Holberton Best School'); Output: Holberton Best School
 Integer: _prinf("5", '3'); Output: 3
    
 ```c
-#include "holberton.h"
+#include "main.h"
 /**
  * main - main function of program
  * Return: always 0
