@@ -35,8 +35,9 @@ Write a function that produces output according to a format.
 
 Handle the following conversion specifiers:
 
-- d
-- i
+   | Specifier | Output                                                                  | Example     |
+   | --------- | ------                                                                  | -------     |
+   | i and d   | Signed decimal integer                                                  | 89          |
 
 2. Just because it's in print doesn't mean it's the gospel
 
