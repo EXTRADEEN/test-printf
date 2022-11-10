@@ -46,7 +46,9 @@ Add more specifiers
 ## Examples
 
 Character: _printf("%c", 'B');  Output: B
+
 String: _printf("%s", 'Holberton Best School'); Output: Holberton Best School
+
 Integer: _prinf("5i", '3'); Output: 3
 
 ## Project Requirements
