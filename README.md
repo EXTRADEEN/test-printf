@@ -54,7 +54,30 @@ Character: _printf("%c", 'B');  Output: B
 String: _printf("%s", 'Holberton Best School'); Output: Holberton Best School
 
 Integer: _prinf("5", '3'); Output: 3
-
+   
+```c
+#include "holberton.h"
+/**
+ * main - main function of program
+ * Return: always 0
+ */
+int main(void)
+{
+	int num;
+	char *string;
+	
+	num = 1;
+	string = "Holberon is"
+	_printf("%s number %i.\n", string, num);
+	return (0);
+}
+```
+```{bash}
+linuxuser>$  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -Wno-format *.c -o example_program
+linuxuser>$  ./example_program
+Holberton is number 1.
+linuxuser>$
+```
 ## Project Requirements
 
 - Allowed editors: vi, vim, emacs
