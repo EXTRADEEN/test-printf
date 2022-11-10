@@ -26,7 +26,7 @@ Write a function that produces output according to a format.
    to handle the following conversion specifiers:
    
    | Specifier | | Output                                                                  | | Example     |
-   | ---       | | ---                                                                     | | ---         |
+   | --------- | | ------                                                                  | | -------     |
    | c         | | Character                                                               | | A           |
    | s         | | String of characters                                                    | | Best School |
    | %         | | A % followed by another % character will write a single % to the stream | | %           |
