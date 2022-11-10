@@ -24,11 +24,13 @@ Write a function that produces output according to a format.
 - write output to stdout, the standard output stream
 - format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need 
    to handle the following conversion specifiers:
-
-- c
-- s
-- %
-
+   
+   | Specifier | | Output | | Example |
+   | --- | | --- | | --- |
+   | c | | Character | | A |
+   | s | | String of characters | | Best School |
+   | % | | A % followed by another % character will write a single % to the stream | | % |
+   
 1. Education is when you read the fine print. Experience is what you get if you don't
 
 Handle the following conversion specifiers:
