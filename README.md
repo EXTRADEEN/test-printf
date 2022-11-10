@@ -24,8 +24,7 @@ Write a function that produces output according to a format.
 - write output to stdout, the standard output stream
 - format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need 
    to handle the following conversion specifiers:
-   
-   
+    
    | Specifier | Output                                                                  | Example     |
    | --------- | ------                                                                  | -------     |
    | c         | Character                                                               | A           |
@@ -34,7 +33,7 @@ Write a function that produces output according to a format.
    
 1. Education is when you read the fine print. Experience is what you get if you don't
 
-Handle the following conversion specifiers:
+- Handle the following conversion specifiers:
 
    | Specifier | Output                                                                  | Example     |
    | --------- | ------                                                                  | -------     |
